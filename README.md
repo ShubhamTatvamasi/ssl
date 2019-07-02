@@ -1,8 +1,8 @@
 # ssl
 
-Generate RSA private key, 2048 bit
+Generate RSA private key, 4096 bit
 ```bash
-openssl genrsa
+openssl genrsa 4096
 ```
 
 Generate RSA private key, 2048 bit with password
@@ -10,7 +10,7 @@ Generate RSA private key, 2048 bit with password
 openssl genrsa -aes256
 ```
 
-Save the generated RSA private key, 2048 bit with password
+Save the generated RSA private key
 ```bash
 openssl genrsa -aes256 -out private.pem
 ```
