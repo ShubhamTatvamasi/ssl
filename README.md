@@ -19,3 +19,16 @@ Generate and save public key from private key
 ```bash
 openssl rsa -in private.pem -outform PEM -pubout -out public.pem
 ```
+---
+
+### Self-Signed Certificate
+
+Generate new private key
+```bash
+openssl ecparam -name secp384r1 -genkey -out ec_key.pem
+```
+
+Generate certificate
+```bash
+openssl req -new -key ec_key.pem -x509 -nodes -days 3650 -out cert.pem
+```
