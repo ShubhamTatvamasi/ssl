@@ -34,7 +34,7 @@ openssl req -new -key ec_key.pem -x509 -nodes -days 3650 -out cert.pem
 ```
 ---
 
-### OpenSSL Dhparam
+### OpenSSL DH Parameters
 
 Generate Diffie-Hellman key exchange
 ```
