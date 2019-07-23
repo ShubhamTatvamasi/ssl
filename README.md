@@ -40,3 +40,11 @@ Generate Diffie-Hellman key exchange
 ```
 openssl dhparam -out dhparam.pem 4096
 ```
+---
+
+### Speed Test
+
+ecdhp256 vs ecdhp384, operations per second
+```
+openssl speed ecdhp256 ecdhp384
+```
