@@ -38,3 +38,19 @@ Generate certificate
 ```bash
 openssl req -new -key ec_key.pem -x509 -nodes -days 3650 -out cert.pem
 ```
+---
+
+### OpenSSL DH Parameters
+
+Generate Diffie-Hellman key exchange
+```bash
+openssl dhparam -out dhparam.pem 4096
+```
+---
+
+### Speed Test
+
+ecdhp256 vs ecdhp384, operations per second
+```bash
+openssl speed ecdhp256 ecdhp384
+```
