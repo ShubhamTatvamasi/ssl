@@ -23,6 +23,12 @@ openssl rsa -in private.pem -outform PEM -pubout -out public.pem
 
 ### Self-Signed Certificate
 
+Get the list of curves available
+```bash
+openssl ecparam -list_curves
+```
+> Only `secp384r1` and `prime256v1` keys are compatible with modern browsers
+
 Generate new private key
 ```bash
 openssl ecparam -name secp384r1 -genkey -out ec_key.pem
