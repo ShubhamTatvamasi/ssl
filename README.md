@@ -21,6 +21,14 @@ openssl rsa -in private.pem -outform PEM -pubout -out public.pem
 ```
 ---
 
+### Standard RSA SSL key used by most websites
+
+RSA 2048 bit key
+```bash
+openssl req -new -newkey rsa:2048 -nodes -keyout shubhamtatvamasi.key -out shubhamtatvamasi.csr
+```
+---
+
 ### Self-Signed Certificate
 
 Get the list of curves available
