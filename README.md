@@ -69,3 +69,10 @@ openssl speed ecdhp256 ecdhp384
 ```bash
 openssl x509 -in certificate.crt -text -noout
 ```
+---
+
+### Convert a PEM based file to JSON
+
+```bash
+awk 'NF {sub(/\r/, ""); printf "%s\\n",$0;}' cert-name.pem
+```
