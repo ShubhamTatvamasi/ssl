@@ -54,6 +54,7 @@ Generate Diffie-Hellman key exchange
 ```bash
 openssl dhparam -out dhparam.pem 4096
 ```
+> add `-dsaparam` flag for faster key generation
 ---
 
 ### Speed Test
