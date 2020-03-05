@@ -68,7 +68,7 @@ openssl speed ecdhp256 ecdhp384
 ### Read information of your SSL certificate
 
 ```bash
-openssl x509 -in certificate.crt -text -noout
+openssl x509 -text -noout -in certificate.crt
 ```
 ---
 
